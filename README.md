@@ -10,24 +10,24 @@ please update these details in `pom.xml` file.
     <label class="bold">Step 1: Add the following to the <build> -> <plugins> block in your
 				pom.xml:</label>
 
-     <pre class="code-block"><code><build></code>
-	<code><plugins></code>
-		<code><plugin></code>
-			<code><groupId>org.apache.maven.plugins</groupId></code>
-			<code><artifactId>maven-surefire-plugin</artifactId></code>
-			<code><version>2.20</version></code>
-			<code><configuration></code>
-			    <code><properties></code>
-					<code><property></code>
-						<code><name>listener</name></code>
-						<code><value>com.qmetry.automation.QASResultUploader</value></code>
-					<code></property></code>
-				<code></properties></code>
-			<code></configuration></code>
-		<code></plugin></code>
-	<code></plugins></code>
-<code></build></code>
-	</pre>
+     <pre class="code-block"><code>&lt;build&gt;</code>
+	<code>&lt;plugins&gt;</code>
+		<code>&lt;plugin&gt;</code>
+			<code>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</code>
+			<code>&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</code>
+			<code>&lt;version&gt;2.20&lt;/version&gt;</code>
+			<code>&lt;configuration&gt;</code>
+			    <code>&lt;properties&gt;</code>
+					<code>&lt;property&gt;</code>
+						<code>&lt;name&gt;listener&lt;/name&gt;</code>
+						<code>&lt;value&gt;com.qmetry.automation.QASResultUploader&lt;/value&gt;</code>
+					<code>&lt;/property&gt;</code>
+				<code>&lt;/properties&gt;</code>
+			<code>&lt;/configuration&gt;</code>
+		<code>&lt;/plugin&gt;</code>
+	<code>&lt;/plugins&gt;</code>
+<code>&lt;/build&gt;</code>
+	</pre> 
     
 </div>
 
