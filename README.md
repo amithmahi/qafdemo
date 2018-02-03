@@ -7,53 +7,53 @@ This is sample QAF + maven  project in Java. It shows how to upload test result 
 please update these details in `pom.xml` file. 
 
 <div id="automationFramework" class="border-top m-t-10 p-t-10"><div class="m-t-sm">
-    <label class="bold">Step 1: Add the following to the &lt;build&gt; -&gt; &lt;plugins&gt; block in your
+    <label class="bold">Step 1: Add the following to the <build> -> <plugins> block in your
 				pom.xml:</label>
 
-     <pre class="code-block"><code>&lt;build&gt;</code>
-	<code>&lt;plugins&gt;</code>
-		<code>&lt;plugin&gt;</code>
-			<code>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</code>
-			<code>&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</code>
-			<code>&lt;version&gt;2.20&lt;/version&gt;</code>
-			<code>&lt;configuration&gt;</code>
-			    <code>&lt;properties&gt;</code>
-					<code>&lt;property&gt;</code>
-						<code>&lt;name&gt;listener&lt;/name&gt;</code>
-						<code>&lt;value&gt;com.qmetry.automation.QASResultUploader&lt;/value&gt;</code>
-					<code>&lt;/property&gt;</code>
-				<code>&lt;/properties&gt;</code>
-			<code>&lt;/configuration&gt;</code>
-		<code>&lt;/plugin&gt;</code>
-	<code>&lt;/plugins&gt;</code>
-<code>&lt;/build&gt;</code>
-	</pre>   
+     <pre class="code-block"><code><build></code>
+	<code><plugins></code>
+		<code><plugin></code>
+			<code><groupId>org.apache.maven.plugins</groupId></code>
+			<code><artifactId>maven-surefire-plugin</artifactId></code>
+			<code><version>2.20</version></code>
+			<code><configuration></code>
+			    <code><properties></code>
+					<code><property></code>
+						<code><name>listener</name></code>
+						<code><value>com.qmetry.automation.QASResultUploader</value></code>
+					<code></property></code>
+				<code></properties></code>
+			<code></configuration></code>
+		<code></plugin></code>
+	<code></plugins></code>
+<code></build></code>
+	</pre>
     
 </div>
 
 
 
 <div class="m-t-sm">
-    <label class="bold">Step 2: Add the following to the &lt;dependencies&gt; block in pom.xml:</label>
-    <pre class="code-block"><code>&lt;dependencies&gt;</code>
-    <code>&lt;dependency&gt;</code>
-        <code>&lt;groupId&gt;com.qmetry&lt;/groupId&gt;</code>
-        <code>&lt;artifactId&gt;automation&lt;/artifactId&gt;</code>
-        <code>&lt;version&gt;1.0.0&lt;/version&gt;</code>
-    <code>&lt;/dependency&gt;</code>
-<code>&lt;/dependencies&gt;</code>
+    <label class="bold">Step 2: Add the following to the <dependencies> block in pom.xml:</label>
+    <pre class="code-block"><code><dependencies></code>
+    <code><dependency></code>
+        <code><groupId>com.qmetry</groupId></code>
+        <code><artifactId>automation</artifactId></code>
+        <code><version>1.0.0</version></code>
+    <code></dependency></code>
+<code></dependencies></code>
 	</pre>
 </div>
 
 <div class="m-t-sm">
-    <label class="bold">Step 3: Add the following to the &lt;repositories&gt; block in pom.xml like:</label>
-    <pre class="code-block"><code>&lt;repositories&gt;</code>
-	<code>&lt;repository&gt;</code>
-		<code>&lt;id&gt;qmetrytestmanager-mvn-repo&lt;/id&gt;</code>
-		<code>&lt;name&gt;QMetry Test Manager Maven Repository&lt;/name&gt;</code>
-		<code>&lt;url&gt;https://raw.github.com/qmetry/qtm4j-maven-uploader/mvn-repo/&lt;/url&gt;</code>
-	<code>&lt;/repository&gt;</code>
-<code>&lt;/repositories&gt;</code>
+    <label class="bold">Step 3: Add the following to the <repositories> block in pom.xml like:</label>
+    <pre class="code-block"><code><repositories></code>
+	<code><repository></code>
+		<code><id>qmetrytestmanager-mvn-repo</id></code>
+		<code><name>QMetry Test Manager Maven Repository</name></code>
+		<code><url>https://raw.github.com/qmetry/qtm4j-maven-uploader/mvn-repo/</url></code>
+	<code></repository></code>
+<code></repositories></code>
 	</pre>
 </div>
 <div class="m-t-sm">
