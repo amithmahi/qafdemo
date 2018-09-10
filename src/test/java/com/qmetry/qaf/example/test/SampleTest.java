@@ -14,7 +14,7 @@ import com.qmetry.qaf.automation.ui.WebDriverTestCase;
 
 public class SampleTest extends WebDriverTestCase {
 
-	@Test(groups = { "P1", "storykey=ZAL-1" })
+	@Test(groups = { "P1", "storykey=ZAL-1","testcasekey=asd-1" })
 	public void testGoogleSearch4() {
 		get("/");
 		searchFor("qaf github infostretch");

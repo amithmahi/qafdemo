@@ -1,7 +1,7 @@
 
 
 SCENARIO: SampleTest
-META-DATA: {"description":"Sample Test Scenario","storykey":"ZAL-1"}
+META-DATA: {"description":"Sample Test Scenario","storykey":"ZAL-1","testcasekey":"ZAL-2"}
 	
 	Given get '/'
 	When search for 'qaf github infostretch'
