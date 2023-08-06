@@ -2,7 +2,7 @@
 This is sample QAS + maven  project in Java. It shows how to upload test result file on JIRA instance using [QMetry for JIRA - Test Management](https://marketplace.atlassian.com/plugins/com.infostretch.QmetryTestManager/cloud/overview).  
 
 
-### Run test
+### Run tests
 
 please update these details in `pom.xml` file. 
 
